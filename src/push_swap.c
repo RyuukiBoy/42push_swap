@@ -6,7 +6,7 @@
 /*   By: oait-bad <oait-bad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/08 19:48:38 by oait-bad          #+#    #+#             */
-/*   Updated: 2023/02/27 02:35:22 by oait-bad         ###   ########.fr       */
+/*   Updated: 2023/02/28 18:17:22 by oait-bad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,9 @@ int	main(int argc, char **argv)
 	if (argc == 1)
 		return (0);
 	split_args(argv, &a);
-	already_sorted(a);
 	num_check(argc, argv);
 	dup_check(a);
+	already_sorted(a);
 	get_rank(&a);
 	if (ft_lstsize(a) == 2 && a->data > a->next->data)
 		swap_a(&a);
